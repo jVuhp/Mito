@@ -1,0 +1,137 @@
+[data-bs-theme=light] {
+	--dbb-sidebar-show-bg: #eaeaeaf0;
+	--dbb-header-icon: #d0d0d0b0;
+	--dbb-header-bg: rgb(235 235 235);
+	--dbb-background-color: #979797;
+	--dbb-background-deg: radial-gradient(at center top, #DBDBDB, #FFFFFF);
+	--dbb-background-sidebar: radial-gradient(at left top, #EBEBEB, #FFFFFF);
+	--dbb-navbar-active-text: #ffffff;
+	--dbb-navbar-active-color: #2b59af;
+	--dbb-navbar-active-deg: linear-gradient(225deg, #7392c9, #3f83ff);
+	--dbb-navbar-active-hover-text: #ffffff;
+	--dbb-navbar-active-hover-color: #5682d3;
+	--dbb-navbar-active-hover-deg: linear-gradient(225deg, #2e6ad3, #3f71ff70);
+	--dbb-navbar-active-border: rgba(153,153,153,1) 75%);
+	--dbb-navbar-default-text: #000000;
+	--dbb-navbar-default-color: #1C1D22;
+	--dbb-navbar-default-deg: linear-gradient(225deg, #121214, #1C1D22);
+	--dbb-theme: #cacaca99;
+	--dbb-theme-text: #014fff;
+	--dbb-nav-bg-tabs: #c9c9c9;
+	--dbb-nav-link-tabs: #000;
+	--dbb-nav-active-tabs: #ffffff85;
+	--dbb-nav-active-link: #000000;
+	--dbb-bg-card: #dedede;
+	
+    --dbb-theme-icon-bg: #d7d7d7; 
+    --dbb-theme-icon-bgi: #c5c5c5; 
+    --dbb-theme-icon-border: #c4c4c4; 
+    --dbb-theme-icon-text: #7c7c7c; 
+    --dbb-theme-icon-hover: #000;
+	--dbb-theme-text-dropdown: rgb(0 0 0 / 1);
+}
+[data-bs-theme=dark] {
+	--dbb-sidebar-show-bg: #181818f0;
+	--dbb-header-icon: #242424b0;
+	--dbb-header-bg: rgb(23 22 22);
+	--dbb-background-color: #3a3a3a;
+	--dbb-background-deg: radial-gradient(at center top, #191919, #0f0f0f);
+	--dbb-background-sidebar: radial-gradient(at left top, #151515, #0f0f0f);
+	--dbb-navbar-active-text: #68e3ff;
+	--dbb-navbar-active-color: #1C1D22;
+	--dbb-navbar-active-deg: linear-gradient(225deg, #2e4cb01f, #2f74dc36);
+	--dbb-navbar-active-hover-text: #01d0ff;
+	--dbb-navbar-active-hover-color: #5682d3;
+	--dbb-navbar-active-hover-deg: linear-gradient(225deg, #018aff73, #0f7bea96);
+	--dbb-navbar-active-border: rgba(153,153,153,1) 75%);
+	--dbb-navbar-default-text: #FFFFFF;
+	--dbb-navbar-default-color: #1C1D22;
+	--dbb-navbar-default-deg: linear-gradient(225deg, #121214, #1C1D22);
+	--dbb-theme: #43434399;
+	--dbb-theme-text: #6695fff0;
+	--dbb-nav-bg-tabs: #1c1c1c;
+	--dbb-nav-link-tabs: #ccc;
+	--dbb-nav-active-tabs: #28282885;
+	--dbb-nav-active-link: #ffffff;
+	--dbb-bg-card: #1e1e1e;
+	
+    --dbb-theme-icon-bg: #17212f; 
+    --dbb-theme-icon-bgi: #18212d; 
+    --dbb-theme-icon-border: #1e213f; 
+    --dbb-theme-icon-text: #a9a9a9; 
+    --dbb-theme-icon-hover: #fff; 
+	--dbb-theme-text-dropdown: rgb(255 255 255 / 1);
+}
+:nth-child(8)  { 
+    grid-area: h;
+} 
+
+.danger:hover.icon-message {
+	border: 1px solid red; 
+}
+.danger:hover.icon-message .icon-message-icon {
+    border-right: 1px solid red; 
+}
+
+.success:hover.icon-message {
+	border: 1px solid green; 
+}
+.success:hover.icon-message .icon-message-icon {
+    border-right: 1px solid green; 
+}
+
+.warning:hover.icon-message {
+	border: 1px solid yellow; 
+}
+.warning:hover.icon-message .icon-message-icon {
+    border-right: 1px solid yellow; 
+}
+.icon-container {
+	position: fixed;
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	margin: 2px;
+}
+.icon-message { 
+    display: flex; 
+    line-height: 1.75; 
+    background: var(--dbb-theme-icon-bg); 
+    border: 1px solid var(--dbb-theme-icon-border); 
+    border-radius: .25rem; 
+    color: var(--dbb-theme-icon-text);
+	transition: all 0.2s;
+	margin-bottom: 2px;
+} 
+
+.icon-message-icon { 
+    padding: 1rem; 
+	background: var(--dbb-theme-icon-bgi);
+    border-right: 1px solid var(--dbb-theme-icon-border); 
+    display: flex; 
+    align-items: center; 
+    color: var(--dbb-theme-icon-text);
+	transition: all 0.2s;
+} 
+
+.icon-message:hover .icon-message-icon, .icon-message:hover {
+	color: var(--dbb-theme-icon-hover);
+	transition: all 0.2s;
+}
+
+.icon-message-text { 
+    padding: 1rem;
+} 
+
+.icon { 
+    width: 1.0666666667em; 
+    height: 1.0666666667em; 
+    stroke-width: 1.5; 
+    vertical-align: -.2em;
+} 
+
+.icon-message-icon svg  { 
+    width: 2.5rem; 
+    height: 2.5rem;
+} 
